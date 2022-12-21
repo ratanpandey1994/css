@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS variable</title>
+    <style>
+        :root {
+            --clr : red;
+            --clr-bg : #000
+        }
+        div {
+            background-color: var(--clr-bg);
+        }
+        h1 {
+            color: var(--clr);
+        }
+        h2 {
+            color: var(--clr);
+        }
+        h3 {
+            --clr: brown;
+            color: var(--clr);
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <h1>This is a heading</h1>
+    </div>
+    <div>
+        <h2>This is a heading</h2>
+    </div>
+    <div>
+        <h3>This is a heading</h3>
+    </div>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Linear Gradient & Create Awesome Image Overlay i</title>
+    <style>
+        * {
+            margin: 0; padding: 0;
+            box-sizing: border-box;
+        }
+        .parent_div {
+            width: 100vw;
+            height: 100vh;
+            background: #485460;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .child_div{
+            width: 60vw;
+            height: 60vh;
+            /* background-image: linear-gradient(to top, rgb(255,255,255,1), rgb(0,0,0,0.2)), url(hero-image.jpg); */
+            background-image: linear-gradient(to right, rgb(255,255,255,0.7) 50%, rgb(0,0,0,0.2) 50%), url(hero-image.jpg);
+            /* background-image: linear-gradient(120deg, rgb(255,255,255,0.9) 50%, transparent 50%), url(hero-image.jpg); */
+            background-size: 100% 100%;
+            box-shadow: 0 10px 20px -6px #000;
+        }
+        @media(max-width: 768px) {
+            .child_div{
+            width: 60vw;
+            height: 60vh;
+            /* background-image: linear-gradient(to top, rgb(255,255,255,1), rgb(0,0,0,0.2)), url(hero-image.jpg); */
+            /* background-image: linear-gradient(to right, rgb(255,255,255,0.7) 50%, rgb(0,0,0,0.2) 50%), url(hero-image.jpg); */
+            background-image: linear-gradient(#fff, #fff), url(hero-image.jpg);
+            background-size: 100% 100%;
+            box-shadow: 0 10px 20px -6px #000;
+        }  
+        }
+
+    </style>
+</head>
+<body>
+    <div class="parent_div">
+        <div class="child_div">
+            
+        </div>
+    </div>
+</body>
+</html>

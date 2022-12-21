@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS practice</title>
+  <style>
+    body{
+      background-color: #000;
+      color: #fff;
+    }
+    .footer-section h4.title {
+      color: #fff;
+      font-size: 26px;
+      font-weight: 900;
+      margin-bottom: 15px;
+      opacity: .7;
+    }
+    span.niva-animate-border {
+    position: relative;
+    display: block;
+    width: 115px;
+    height: 3px;
+    background: #fff;
+    overflow: hidden;
+    opacity: .9;
+    margin-bottom: 25px;
+    }
+    span.niva-animate-border::after {
+    position: absolute;
+    content: "";
+    width: 35px;
+    height: 3px;
+    left: 15px;
+    bottom: 0;
+    border-left: 10px solid #000;
+    border-right: 10px solid #000;
+    -webkit-animation: animborder 2s linear infinite;
+    animation: animborder 2s linear infinite;
+    }
+    @-webkit-keyframes animborder{0%{-webkit-transform:translateX(0);transform:translateX(0)}100%{-webkit-transform:translateX(113px);transform:translateX(113px)}}
+    @keyframes animborder{0%{-webkit-transform:translateX(0);transform:translateX(0)}100%{-webkit-transform:translateX(113px);transform:translateX(113px)}}
+  </style>
+</head>
+<body>
+  
+  <h4 class="title">Quick Links</h4>
+  <span class="niva-animate-border"></span>
+
+</body>
+</html>
